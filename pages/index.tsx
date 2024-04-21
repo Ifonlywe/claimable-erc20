@@ -26,8 +26,8 @@ const Home: NextPage = () => {
   const getUserProof = async (address: string) => {
     const merkleTree = await createMerkleTreeFromAllowList(allowList);
     const leaf = {
-      "address": address,
-      "maxClaimable": "<CLAIMABLE_AMOUNT>"
+      "address": 0x7b345dEBE7905eEdb5ACE0Cecda94ab5F5011319,
+      "maxClaimable": "100000000"
     };
     const proof = await getProofsForAllowListEntry(merkleTree, leaf);
     const proofHash = "0x" + proof[0].data.toString("hex");
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
   };
 
   const address = useAddress();
-  const { contract: tokenContract } = useContract("<CONTRACT_ADDRESS>");
+  const { contract: tokenContract } = useContract("0xC0BC84e95864BdfDCd1CCFB8A3AA522E79Ca1410");
   const { data: tokenBalance } = useTokenBalance(tokenContract, address);
 
   return (
