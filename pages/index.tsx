@@ -7,12 +7,12 @@ import { utils } from "ethers";
 const Home: NextPage = () => {
   const allowList = [
     {
-      "address": "<ALLOWLIST_ADDRESS>",
-      "maxClaimable": "<CLAIMABLE_AMOUNT>"
+      "address": "0x7b345dEBE7905eEdb5ACE0Cecda94ab5F5011319",
+      "maxClaimable": "100000000"
     },
     {
-      "address": "<ALLOWLIST_ADDRESS>",
-      "maxClaimable": "<CLAIMABLE_AMOUNT>"
+      "address": "0x50BAAFeAAf78f2cf1ACbE207887019Ee72962144",
+      "maxClaimable": "200000000"
     }
   ];
 
